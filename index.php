@@ -91,6 +91,11 @@ if (get_home_page() != HOMEPAGE_SITE) {
 // Trigger event.
 course_view(context_course::instance(SITEID));
 
+
+header('content-type: image/png');
+$image_url='Assets/Edusaur-logo.svg';
+//echo file_get_contents($image_url);
+
 $PAGE->set_pagetype('site-index');
 $PAGE->set_docs_path('');
 $editing = $PAGE->user_is_editing();
