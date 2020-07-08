@@ -31,7 +31,7 @@ require_once($CFG->libdir . '/behat/lib.php');
 
 if (isloggedin()) {
     $navdraweropen = (get_user_preferences('drawer-open-nav', 'true') == 'true');
-    $draweropenright = (get_user_preferences('sidepre-open', 'true') == 'true');
+    $draweropenright = (get_user_preferences('sidepre-open', 'false') == 'false');
 } else {
     $navdraweropen = false;
     $draweropenright = false;
