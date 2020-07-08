@@ -4,7 +4,7 @@
     top: 70px;
     height: calc(100% - #{$navbar-height} - 50px);
     padding-bottom: 20px;
-    overflow-y: auto;
+    overflow-y: none;
 
     &::-webkit-scrollbar {
         width: 7px;
@@ -136,6 +136,7 @@
 
 #nav-drawer[aria-hidden=true] .list-group-item {
     display: inherit;
+    overflow: hidden;
 }
 
 #nav-drawer.closed {
@@ -145,6 +146,7 @@
 
     .metismenu .has-arrow::after {
         display: none;
+        overflow: none;
     }
 
     .list-group {
@@ -165,7 +167,7 @@
                 display: none;
             }
 
-            &:hover {
+            /*&:hover {
                 width: 270px;
                 background-color: $navbar-bg-hover;
 
@@ -217,11 +219,11 @@
                         }
                     }
                 }
-            }
+            } 
 
             ul li.list-group-item:hover {
                 border-bottom-right-radius: $card-border-radius;
-            }
+            }*/
         }
     }
 }
@@ -281,5 +283,6 @@ body.drawer-open-left #nav-drawer-footer {
 
     .metismenu [data-key="course-sections"] {
         display: none;
+        overflow: none;
     }
 }
