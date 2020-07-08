@@ -1,3 +1,4 @@
+
 <?php
 // This file is part of Moodle - http://moodle.org/
 //
@@ -33,14 +34,17 @@ $hasdrawertoggle = false;
 $navdraweropen = false;
 $draweropenright = false;
 
+
+
 if (isloggedin()) {
     $hasdrawertoggle = true;
     $navdraweropen = (get_user_preferences('drawer-open-nav', 'true') == 'true');
     $draweropenright = (get_user_preferences('sidepre-open', 'true') == 'true');
 }
 
-$blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
+$blockshtml = $OUTPUT->blocks('side-pre');
+
 
 $extraclasses = [];
 if ($navdraweropen) {
@@ -50,6 +54,7 @@ if ($navdraweropen) {
 if ($draweropenright && $hasblocks) {
     $extraclasses[] = 'drawer-open-right';
 }
+
 
 $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
@@ -76,3 +81,4 @@ $themesettings = new \theme_moove\util\theme_settings();
 $templatecontext = array_merge($templatecontext, $themesettings->footer_items());
 
 echo $OUTPUT->render_from_template('theme_moove/columns2', $templatecontext);
+
