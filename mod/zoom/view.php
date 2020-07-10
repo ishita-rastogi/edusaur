@@ -225,16 +225,20 @@ echo html_writer::table($table);
 
 <!DOCTYPE HTML>
 <div class ="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
-    	<iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://tamu.zoom.us/j/91970605427" frameborder="0"></iframe>
+    	<iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="<?php echo $zoom->join_url; ?>" frameborder="0"></iframe>
 </div>
 </html>
 
 
 <?php
 
+
 // Finish the page.
 echo $OUTPUT->footer();
 
 ?>
+
+//https://us04web.zoom.us/j/73431461464?pwd=dmxvU3RZVHMremNtdkMrUzcxNFpXUT09
+//<?php echo $zoom->join_url; ?>
 
 
