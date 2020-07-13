@@ -166,7 +166,7 @@ if (connection_aborted()) {
 clearstatcache();
 if (file_exists($cachefont)) {
     send_cached_font($cachefont, $etag, $font, $mimetype);
-}
+} 
 
 send_uncached_font($fontfile, $font, $mimetype);
 
