@@ -31,9 +31,6 @@ require_once(dirname(__FILE__).'/lib.php');
 require_once(dirname(__FILE__).'/locallib.php');
 require_once(dirname(__FILE__).'/../../lib/moodlelib.php');
 
-
-$config = get_config('mod_zoom');
-
 list($course, $cm, $zoom) = zoom_get_instance_setup();
 
 $context = context_module::instance($cm->id);
