@@ -31,6 +31,7 @@ require_once(dirname(__FILE__).'/lib.php');
 require_once(dirname(__FILE__).'/locallib.php');
 require_once(dirname(__FILE__).'/../../lib/moodlelib.php');
 
+
 $config = get_config('mod_zoom');
 
 list($course, $cm, $zoom) = zoom_get_instance_setup();
@@ -89,6 +90,7 @@ $strmuteuponentry = get_string('option_mute_upon_entry', 'mod_zoom');
 $strauthenticatedusers = get_string('option_authenticated_users', 'mod_zoom');
 
 // Output starts here.
+
 echo $OUTPUT->header();
 
 if ($showrecreate) {
@@ -218,6 +220,8 @@ $linktoall = new html_table_cell($linkall);
 $linktoall->colspan = $numcolumns;
 $table->data[] = array($linktoall);
 
+
+echo "</br>";
 echo html_writer::table($table);
 
 ?>
@@ -231,14 +235,11 @@ echo html_writer::table($table);
 
 
 <?php
-
-
 // Finish the page.
 echo $OUTPUT->footer();
 
 ?>
 
-//https://us04web.zoom.us/j/73431461464?pwd=dmxvU3RZVHMremNtdkMrUzcxNFpXUT09
-//<?php echo $zoom->join_url; ?>
+
 
 
