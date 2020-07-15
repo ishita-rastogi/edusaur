@@ -93,4 +93,10 @@ if (!isset($options['printlastmodified']) || !empty($options['printlastmodified'
     echo html_writer::div("$strlastmodified: " . userdate($page->timemodified), 'modified');
 }
 
+?>
+
+
+
+<?php
 echo $OUTPUT->footer();
+?>

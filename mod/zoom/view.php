@@ -30,6 +30,7 @@ require_once(dirname(dirname(dirname(__FILE__))).'/config.php');
 require_once(dirname(__FILE__).'/lib.php');
 require_once(dirname(__FILE__).'/locallib.php');
 require_once(dirname(__FILE__).'/../../lib/moodlelib.php');
+require_once(dirname(__FILE__).'/zoom_form.php');
 
 list($course, $cm, $zoom) = zoom_get_instance_setup();
 
@@ -217,7 +218,18 @@ $linktoall = new html_table_cell($linkall);
 $linktoall->colspan = $numcolumns;
 $table->data[] = array($linktoall);
 
+?>
 
+<!DOCTYPE HTML>
+<form action="test-link.php" method="GET">
+    Enter Zoom Url: <input type="text" name="username">
+    <input type="submit">
+</form>
+
+</html>
+
+<?php
+echo $_GET["username"];
 echo "</br>";
 echo html_writer::table($table);
 
