@@ -220,13 +220,21 @@ $table->data[] = array($linktoall);
 
 ?>
 
-<!DOCTYPE HTML>
-<form action="test-link.php" method="GET">
+
+<!--<!DOCTYPE HTML>
+<form action="#" method="POST" target>
     Enter Zoom Url: <input type="text" name="username">
     <input type="submit">
 </form>
 
+
+<button onclick="parent.open('$username')" type="button">
+         www.example.com</button>
+
 </html>
+
+-->
+
 
 <?php
 echo $_GET["username"];
