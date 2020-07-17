@@ -105,6 +105,7 @@ function core_myprofile_navigation(core_user\output\myprofile\tree $tree, $user,
 
     // Preference page.
     if (!$iscurrentuser && $PAGE->settingsnav->can_view_user_preferences($user->id)) {
+
         $url = new moodle_url('/user/preferences.php', array('userid' => $user->id));
         $title = get_string('preferences', 'moodle');
         $node = new core_user\output\myprofile\node('administration', 'preferences', $title, null, $url);
