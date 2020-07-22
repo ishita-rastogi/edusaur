@@ -283,8 +283,10 @@ if ($purpose == "add") {
     // Create a new notification - Used for both Ajax Calls & NON-JS calls.
     $row = new stdClass();
 
-    $row->title = $title;
-    $row->message = $message;
+    date_default_timezone_set("America/New_York");
+
+    $row->title = 'Hours on Edusaur: ';
+    $row->message = date('h:i');
     $row->type = $type;
     $row->aicon = $aicon;
     $row->enabled = $enabled;

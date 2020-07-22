@@ -93,35 +93,5 @@ if (!isset($options['printlastmodified']) || !empty($options['printlastmodified'
    // echo html_writer::div("$strlastmodified: " . userdate($page->timemodified), 'modified');
 }
 
-?>
-
-<!DOCTYPE HTML>
-<head>
-
-</head>
-<body>
-<form action="#" method="POST" target="_blank">
-    Enter Zoom Url: <input type="text" name="username" id="username">
-    <input type="button" onclick = "genUrl()" value="Submit">
-</form>
-<div class ="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
-    	<iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="<?php echo $zoom->join_url; ?>" frameborder="0"></iframe>
-</div>
-<script type="text/javascript">
-function genUrl(){
-    var zoom_link = document.getElementById('username');
-    //alert(zoom_link.value);
-    window.open(zoom_link.value, '_blank');
-
-}
-
-</script>
-</body>
-
-
-</html>
-
-
-<?php
 echo $OUTPUT->footer();
 ?>

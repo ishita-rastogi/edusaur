@@ -251,10 +251,11 @@ echo html_writer::table($table);
 </html>
 
 
-<?php
-// Finish the page.
-echo $OUTPUT->footer();
 
+// Finish the page.
+
+<?php
+echo $OUTPUT->footer();
 ?>
 
 
