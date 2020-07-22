@@ -69,6 +69,17 @@ $themesettings = new \theme_moove\util\theme_settings();
 
 $templatecontext = array_merge($templatecontext, $themesettings->footer_items());
 
+if (is_siteadmin() && $PAGE->pagetype == 'my-index') {
+    $adminifos = new \theme_moove\util\admininfos();
+
+    $templatecontext['totalusage'] = $adminifos->get_totaldiskusage();
+    $templatecontext['totalactiveusers'] = $adminifos->get_totalactiveusers();
+    $templatecontext['totalsuspendedusers'] = $adminifos->get_suspendedusers();
+    $templatecontext['totalcourses'] = $adminifos->get_totalcourses();
+    $templatecontext['onlineusers'] = $adminifos->get_totalonlineusers();
+
+    $templatecontext['canviewadmininfos'] = true;
+}
 
 // Improve boost navigation.
 theme_moove_extend_flat_navigation($PAGE->flatnav);
