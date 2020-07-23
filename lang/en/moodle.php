@@ -499,7 +499,7 @@ $string['deletecheck'] = 'Delete {$a} ?';
 $string['deletechecktype'] = 'Are you sure that you want to delete this {$a->type}?';
 $string['deletechecktypename'] = 'Are you sure that you want to delete the {$a->type} "{$a->name}"?';
 $string['deletecheckfiles'] = 'Are you absolutely sure you want to delete these files?';
-$string['deletecheckfull'] = 'Are you absolutely sure you want to completely delete the user {$a}, including their enrolments, activity and other user data?';
+$string['deletecheckfull'] = 'Are you absolutely sure you want to completely delete the user {$a}, including their enrollments, activity and other user data?';
 $string['deletecheckwarning'] = 'You are about to delete these files';
 $string['deletepicture'] = 'Delete picture';
 $string['deletesection'] = 'Delete section';
@@ -753,7 +753,7 @@ $string['encryptedcode'] = 'Encrypted code';
 $string['enddate'] = 'Course end date';
 $string['enddate_help'] = 'The course end date is used for determining whether a course should be included in a user\'s list of courses. When the end date is past, the course is no longer listed in the navigation and is listed as past in the course overview. The course end date may also be used by custom reports. Users can still enter the course after the end date; in other words the date does not restrict access.';
 $string['english'] = 'English';
-$string['enrolmentmethods'] = 'Enrolment methods';
+$string['enrolmentmethods'] = 'Enrollment methods';
 $string['entercourse'] = 'Click to enter this course';
 $string['enteremail'] = 'Enter your email address';
 $string['enteremailaddress'] = 'Enter in your email address to reset your
@@ -1089,7 +1089,7 @@ $string['indicator:completeduserprofiledef'] = 'User profile is completed';
 $string['indicator:completeduserprofiledef_help'] = 'The site policies have been agreed to and the user has filled in the following fields: Institution, Department, Address, City, Country, URL.';
 $string['indicator:completionenabled'] = 'Completion tracking enabled';
 $string['indicator:completionenabled_help'] = 'This indicator represents that completion tracking has been enabled for this course.';
-$string['indicator:nostudent'] = 'Student enrolments';
+$string['indicator:nostudent'] = 'Student enrollments';
 $string['indicator:nostudent_help'] = 'This indicator reflects the availability of students in the course.';
 $string['indicator:noteacher'] = 'Teacher availability';
 $string['indicator:noteacher_help'] = 'This indicator reflects the availability of teachers in the course.';
@@ -1693,7 +1693,7 @@ $string['rejectdots'] = 'Reject...';
 $string['relativedatesmode'] = 'Relative dates mode';
 $string['relativedatesmode_help'] = 'Display course or activity dates relative to the user\'s start date in the course.
 
-The user\'s course start date will be their enrolment start date, unless they are enrolled before the course begins in which case their start date will be the course start date.
+The user\'s course start date will be their enrollment start date, unless they are enrolled before the course begins in which case their start date will be the course start date.
 
 WARNING: This is an experimental feature and not all activities may support it. Once the course has been created, this course setting can no longer be changed.';
 $string['relativedatesmode_warning'] = '<strong>Warning:</strong> Relative dates mode cannot be changed once the course has been created.';
@@ -1978,7 +1978,7 @@ $string['statsreport1'] = 'Logins';
 $string['statsreport10'] = 'User activity';
 $string['statsreport11'] = 'Most active courses';
 $string['statsreport12'] = 'Most active courses (weighted)';
-$string['statsreport13'] = 'Most participatory courses (enrolments)';
+$string['statsreport13'] = 'Most participatory courses (enrollments)';
 $string['statsreport14'] = 'Most participatory courses (posts/views)';
 $string['statsreport2'] = 'Views (all roles)';
 $string['statsreport3'] = 'Posts (all roles)';
@@ -2131,8 +2131,8 @@ $string['unzippingbackup'] = 'Unzipping backup';
 $string['up'] = 'Up';
 $string['update'] = 'Update';
 $string['updated'] = 'Updated {$a}';
-$string['updatemymoodleoff'] = 'Stop customising this page';
-$string['updatemymoodleon'] = 'Customise this page';
+$string['updatemymoodleoff'] = 'Stop customizing this page';
+$string['updatemymoodleon'] = 'Customize this page';
 $string['updatemyprofile'] = 'Update profile';
 $string['updatesevery'] = 'Updates every {$a} seconds';
 $string['updatethis'] = 'Update this {$a}';
@@ -2274,7 +2274,7 @@ $string['youhaveupcomingactivitiesdue'] = 'You have upcoming activities due';
 $string['youhaveupcomingactivitiesdueinfo'] = 'Hi {$a},
 
 <br/><br/>You have upcoming activities due:';
-$string['youneedtoenrol'] = 'To perform that action you need to enrol in this course.';
+$string['youneedtoenrol'] = 'To perform that action you need to enroll in this course.';
 $string['yourlastlogin'] = 'Your last login was';
 $string['yourself'] = 'yourself';
 $string['yourteacher'] = 'your {$a}';
