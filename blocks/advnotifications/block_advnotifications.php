@@ -176,4 +176,11 @@ class block_advnotifications extends block_base
         }
         return true;
     }
+
+ public function detTime(){
+    for ($i = 0; $i < 24; $i++) { 
+        sleep(3600); // Sleep 1 hour for 24 hours
+        //do stuff here?
+    }
+    }
 }
