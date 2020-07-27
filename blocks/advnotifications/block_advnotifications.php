@@ -25,7 +25,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-
+$notify = false;
 /**
  * Class block_advnotifications extends base blocks class. Initialise and render notifications.
  *
@@ -39,6 +39,12 @@ class block_advnotifications extends block_base
      */
     public function init() {
         $this->title = get_string('advnotifications', 'block_advnotifications');
+    }
+
+    public function delay_send(){
+        sleep(3600);
+        $notify = true;
+         // Sleep 1 hour for 24 hours      //do stuff here?
     }
 
     /**
@@ -62,20 +68,27 @@ class block_advnotifications extends block_base
             $renderer = $this->page->get_renderer('block_advnotifications');
 
             // Get & prepare notifications to render.
-            $notifications = prep_notifications($this->instance->id);
+           $notifications = prep_notifications($this->instance->id);
 
             // Render notifications.
+
             $html = $renderer->render_notification($notifications);
+                
 
             if (get_config('block_advnotifications', 'multilang')) {
-                // Format text to support multilang strings/content.
+                    // Format text to support multilang strings/content.
                 $this->content->text = format_text($html, FORMAT_HTML);
-            } else {
+            } 
+            else if($notify == true) {
                 // Render as-is.
                 $this->content->text = $html;
             }
+            else{
+                $this->content->text = " ";
+            }
 
             return $this->content;
+        
         }
 
         return false;
@@ -176,11 +189,6 @@ class block_advnotifications extends block_base
         }
         return true;
     }
-
- public function detTime(){
-    for ($i = 0; $i < 24; $i++) { 
-        sleep(3600); // Sleep 1 hour for 24 hours
-        //do stuff here?
-    }
-    }
+    
 }
+
