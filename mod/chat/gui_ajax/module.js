@@ -252,9 +252,7 @@ M.mod_chat_ajax.init = function(Y, cfg) {
                 list.append(li);
             }
         },
-        send_audio: function() {
-            alert('hi');
-        }
+        
 
     };
 
