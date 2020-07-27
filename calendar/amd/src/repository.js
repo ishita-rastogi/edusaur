@@ -106,7 +106,7 @@ export const getCalendarMonthData = (year, month, courseId, categoryId, includeN
             categoryid: categoryId,
             includenavigation: includeNavigation,
             mini,
-            day,
+            day
         }
     };
 
