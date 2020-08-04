@@ -49,18 +49,22 @@
     .carousel-caption {
         top: 0;
         left: 40px;
+        padding-bottom: relative;
         bottom: inherit;
         width: fit-content;
         max-width: 50%;
         text-align: inherit;
         text-shadow: none;
 
-        .title,
+        
         .caption {
             color: #fff;
-            background-color: rgba(0, 0, 0, .8);
+            background-color:rgba(115, 1, 88, .9);
             margin-top: 40px;
-            padding: 20px;
+            margin-bottom: 0px;
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
             max-width: intrinsic;
             max-width: -moz-max-content;
             max-width: -webkit-max-content
@@ -68,6 +72,14 @@
 
         .title {
             font-size: 2rem;
+            color: #fff;
+            background-color:rgba(115, 1, 88, .9);
+            margin-top: 40px;
+            padding: 20px;
+            padding-bottom:20px;
+            max-width: intrinsic;
+            max-width: -moz-max-content;
+            max-width: -webkit-max-content
         }
     }
 }
