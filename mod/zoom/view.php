@@ -252,7 +252,7 @@ echo html_writer::table($table);
 
 
 
-// Finish the page.
+
 
 <?php
 echo $OUTPUT->footer();
