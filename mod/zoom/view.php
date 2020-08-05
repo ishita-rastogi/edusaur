@@ -251,6 +251,12 @@ echo html_writer::table($table);
 </html>
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 43b613953613c7cacb0b51ed96bc1233425b794f
 <?php
 echo $OUTPUT->footer();
 ?>
