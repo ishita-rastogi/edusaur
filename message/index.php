@@ -91,3 +91,7 @@ if (!get_user_preferences('core_message_migrate_data', false)) {
 }
 echo \core_message\helper::render_messaging_widget(false, $userid, $conversationid, $view);
 echo $OUTPUT->footer();
+?>
+
+
+

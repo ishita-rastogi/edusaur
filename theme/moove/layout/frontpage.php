@@ -30,6 +30,7 @@ user_preference_allow_ajax_update('sidepre-open', PARAM_ALPHA);
 require_once($CFG->libdir . '/behat/lib.php');
 
 $extraclasses = [];
+$test = FALSE;
 
 $themesettings = new \theme_moove\util\theme_settings();
 
@@ -155,3 +156,6 @@ if (isloggedin()) {
 
     echo $OUTPUT->render_from_template('theme_moove/frontpage_guest', $templatecontext);
 }
+
+?>
+

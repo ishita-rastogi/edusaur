@@ -107,4 +107,7 @@ if (!empty($data) || (!empty($p) && !empty($s))) {
     print_error("errorwhenconfirming");
 }
 
+
 redirect("$CFG->wwwroot/");
+
+?>

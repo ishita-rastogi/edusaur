@@ -86,3 +86,4 @@ if (isset($PAGE->cm->modname) && in_array($PAGE->cm->modname, $moduleswithnavinb
 } else {
     echo $OUTPUT->render_from_template('theme_moove/columns2', $templatecontext);
 }
+?>

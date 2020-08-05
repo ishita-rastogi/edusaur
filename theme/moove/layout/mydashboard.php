@@ -87,3 +87,7 @@ theme_moove_extend_flat_navigation($PAGE->flatnav);
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
 
 echo $OUTPUT->render_from_template('theme_moove/mydashboard', $templatecontext);
+?>
+
+
+

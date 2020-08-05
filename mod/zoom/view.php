@@ -251,9 +251,6 @@ echo html_writer::table($table);
 </html>
 
 
-
-// Finish the page.
-
 <?php
 echo $OUTPUT->footer();
 ?>

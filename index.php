@@ -27,6 +27,8 @@ if (!file_exists('./config.php')) {
     die;
 }
 
+$test = false;
+
 require_once('config.php');
 require_once($CFG->dirroot .'/course/lib.php');
 require_once($CFG->libdir .'/filelib.php');
@@ -129,3 +131,6 @@ if ($editing && has_capability('moodle/course:create', context_system::instance(
     echo $courserenderer->add_new_course_button();
 }
 echo $OUTPUT->footer();
+
+
+
