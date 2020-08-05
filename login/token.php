@@ -104,3 +104,10 @@ if (!empty($user)) {
 } else {
     throw new moodle_exception('invalidlogin');
 }
+
+
+?>
+
+
+
+
