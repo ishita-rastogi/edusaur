@@ -4,7 +4,7 @@
     }
     .breadcrumb {
         padding: 0.5em 1em;
-        background-color: $body-bg;
+        background-color: #0B726f;
         border-radius: .25em;
 
         &:after {
@@ -31,8 +31,9 @@
             }
 
             .no-link {
-                background-color: #f7f7f7;
-                border-color: #f7f7f7;
+                color: #fff;
+                background-color: #0b726f;
+                border-color: #0B726f;
             }
         }
     }
@@ -43,20 +44,22 @@
     .breadcrumb li > * {
         /* single step */
         display: inline-block;
-        color: #2c3f4c;
+        color: #fff;
+        background-color: #0b726f;
+        border-color: #0B726f;
     }
     .breadcrumb li.current > * {
         /* selected step */
-        color: #96c03d;
+        color: #0B726f;
     }
     .no-touch .breadcrumb a:hover {
         /* steps already visited */
-        color: #96c03d;
+        color: #0B726f;
     }
 
     .breadcrumb {
         padding: 0;
-        background-color: transparent;
+        background-color:#0B726f;
     }
     .breadcrumb li {
         position: relative;
@@ -69,10 +72,9 @@
     .breadcrumb li > * {
         position: relative;
         padding: .4em .8em .4em 1.5em;
-        color: #2c3f4c;
-        background-color: $body-bg;
-        /* the border color is used to style its ::after pseudo-element */
-        border-color: $body-bg;
+        color: #fff;
+        background-color: #0b726f;
+        border-color: #0B726f;
     }
 
     .breadcrumb li:last-of-type {
@@ -82,8 +84,8 @@
     .breadcrumb li.current > * {
         /* selected step */
         color: #fff;
-        background-color: #96c03d;
-        border-color: #96c03d;
+        background-color: #0b726f;
+        border-color: #0B726f;
     }
 
     .breadcrumb li:first-of-type > * {
@@ -99,8 +101,8 @@
     .no-touch .breadcrumb a:hover {
         /* steps already visited */
         color: #fff;
-        background-color: #2c3f4c;
-        border-color: #2c3f4c;
+        background-color: #0b726f;
+        border-color: #0B726f;
     }
 
     .breadcrumb li::after,
